@@ -5,30 +5,27 @@
 		<meta name="viewport" content="width=device-width">
 		<title>Primer desafio</title>
 		<link rel="stylesheet" href="styles.css">
+		<link rel="icon" href="data:,">
 	</head>
 	<body>
 		<header>
-			<h1>Pagina web para cifrar y decrifrar textos</h1>
+			<h1>Cifre su mensaje</h1>
 		</header>
 		<main>
 			<div class="container">
 				<form id="form">
 					<div class="form-grup">
-						<textarea id="texto" name="texto"></textarea>
+						<textarea id="texto" name="texto" placeholder="Ingrese el texto a cifrar" required></textarea>
 					</div>
 					<div class="form-grup">
-						<button id="encriptar">Encriptar</button>	
-						<button id="decifrar">Desencriptar</button>
+						<button id="encriptar" >Encriptar</button>	
+						<button id="decifrar" >Desencriptar</button>
 					</div>
 				</form>
 			</div>
 			<div class="element-container">
 				<section class="section">
-					<p>Hola</p>
-					<p>Hola</p>
-					<p>Hola</p>
-					<p>Hola</p>
-
+					<p id="texto-cifrado"></p>
 				</section>
 			</div>
 		</main>
