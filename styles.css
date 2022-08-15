@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #e1ecec;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  margin: 40px auto 0 auto;
+}
+
+main div {
+  margin: 10px;
+  /*border: 1px solid black;*/
+  border-radius: 5px;
+}
+
+.container {
+  width: 70%;
+  background-color: #fff;
+}
+
+.element-container {
+  width: 30%;
+  background-color: #fff;
+}
+.form {
+  width: 100%;
+  margin: auto;
+}
+
+.form-grup {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+#texto {
+  width: 100%;
+  height: 320px;
+  resize: none;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #758c8d;
+}
+
+.form-grup #texto:focus {
+  outline: none;
+  border: 1px solid #146789;
+  border-radius: 5px;
+}
+
+.form-grup button {
+  padding: 6px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.form-grup #encriptar {
+  background-color: #0fffc7;
+  color: #000;
+}
+
+.form-grup #decifrar {
+  background-color: #003097;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.section {
+  padding: 10px;
+}
