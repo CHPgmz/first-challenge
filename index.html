@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
-		<title>Primer desafio</title>
-		<link rel="stylesheet" href="styles.css">
-		<link rel="icon" href="data:,">
-	</head>
-	<body>
-		<header>
-			<h1>Cifre su mensaje</h1>
-		</header>
-		<main>
-			<div class="container">
-				<form id="form">
-					<div class="form-grup">
-						<textarea id="texto" name="texto" placeholder="Ingrese el texto a cifrar" required></textarea>
-					</div>
-					<div class="form-grup">
-						<button id="encriptar" >Encriptar</button>	
-						<button id="decifrar" >Desencriptar</button>
-					</div>
-				</form>
-			</div>
-			<div class="element-container">
-				<section class="section">
-					<p id="texto-cifrado"></p>
-				</section>
-			</div>
-		</main>
-		<script type="module" src="app.js">	</script>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Primer desafio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="data:," />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <header>
+      <h1>Cifre su mensaje</h1>
+    </header>
+    <main>
+      <div class="container">
+        <form id="form">
+          <div class="form-grup">
+            <textarea
+              id="texto"
+              name="texto"
+              placeholder="Ingrese el texto a cifrar"
+              required
+            ></textarea>
+          </div>
+          <div class="form-grup">
+            <button id="encriptar">Cifrar</button>
+            <button id="decifrar">Descifrar</button>
+          </div>
+        </form>
+      </div>
+      <div class="element-container" id="elm-cnt">
+        <section class="section">
+          <p id="texto-cifrado"></p>
+          <div class="options">
+            <button class="disabled" id="button">copiar</button>
+            <p id="msj" class="msj-disable">Texto Copiado</p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script type="module" src="app.js"></script>
+  </body>
 </html>
